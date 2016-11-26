@@ -1,0 +1,808 @@
+[W 161122 10:43:28 Passport:11] warning msg
+[E 161122 10:43:28 Passport:12] error msg
+[D 161122 10:46:12 Passport:9] debug msg
+[I 161122 10:46:12 Passport:10] info msg
+[W 161122 10:46:12 Passport:11] warning msg
+[E 161122 10:46:12 Passport:12] error msg
+[I 161122 10:46:12 web:1946] 304 GET / (127.0.0.1) 14.21ms
+[D 161122 10:47:40 Passport:9] debug msg
+[I 161122 10:47:40 Passport:10] info msg
+[W 161122 10:47:40 Passport:11] warning msg
+[E 161122 10:47:40 Passport:12] error msg
+[I 161122 10:47:40 web:1946] 304 GET / (127.0.0.1) 2.97ms
+[E 161122 16:38:38 web:1524] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|0e983cf2|9f2c5110c852c98b3dea958d787e2853|1479718565', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/VerifyCode.py", line 22, in get
+        name, text, image = captcha.generate_captcha
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 161122 16:38:38 web:1946] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 6.43ms
+[I 161122 16:38:57 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[E 161122 16:39:04 web:1524] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|0e983cf2|9f2c5110c852c98b3dea958d787e2853|1479718565', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/VerifyCode.py", line 22, in get
+        name, text, image = captcha.generate_captcha()
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 161122 16:39:04 web:1946] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 12.36ms
+[I 161122 16:40:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:40:54 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 137.36ms
+[I 161122 16:41:35 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 16.11ms
+[I 161122 16:42:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:43:03 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 53.24ms
+[I 161122 16:43:50 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:46:36 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:46:55 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:47:15 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[W 161122 16:49:47 web:1946] 404 GET /api/check_login (127.0.0.1) 14.42ms
+[W 161122 16:49:47 web:1946] 404 GET /api/house/index (127.0.0.1) 2.23ms
+[W 161122 16:49:48 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.29ms
+[D 161122 16:49:50 Passport:9] debug msg
+[I 161122 16:49:50 Passport:10] info msg
+[W 161122 16:49:50 Passport:11] warning msg
+[E 161122 16:49:50 Passport:12] error msg
+[I 161122 16:49:50 web:1946] 200 GET / (127.0.0.1) 2.66ms
+[I 161122 16:50:09 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:50:12 web:1946] 200 GET / (127.0.0.1) 35.20ms
+[I 161122 16:50:12 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.76ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 17.64ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.32ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.45ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 6.95ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 5.13ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.86ms
+[I 161122 16:50:13 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 9.69ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.64ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.60ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 6.17ms
+[I 161122 16:50:14 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.83ms
+[I 161122 16:50:14 web:1946] 304 GET /static/js/template.js (127.0.0.1) 8.26ms
+[I 161122 16:50:14 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.97ms
+[I 161122 16:50:14 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.99ms
+[I 161122 16:50:14 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 6.22ms
+[I 161122 16:50:14 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 17.13ms
+[I 161122 16:50:15 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 11.90ms
+[W 161122 16:50:17 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.12ms
+[I 161122 16:50:20 web:1946] 304 GET /register.html (127.0.0.1) 1.48ms
+[I 161122 16:50:20 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.64ms
+[W 161122 16:50:23 web:1521] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1): Missing argument codeid
+[W 161122 16:50:23 web:1946] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1) 1.06ms
+[W 161122 16:50:28 web:1521] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1): Missing argument codeid
+[W 161122 16:50:28 web:1946] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1) 1.29ms
+[I 161122 16:51:31 web:1946] 304 GET /register.html (127.0.0.1) 1.44ms
+[I 161122 16:51:31 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.78ms
+[I 161122 16:51:31 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.57ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.02ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.68ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.13ms
+[I 161122 16:51:31 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.68ms
+[I 161122 16:51:32 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.64ms
+[I 161122 16:51:32 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.84ms
+[I 161122 16:51:32 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.77ms
+[I 161122 16:51:34 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=ad53fc8c-660f-4935-8120-e6b23182f582 (127.0.0.1) 54.53ms
+[I 161122 16:52:00 web:1946] 200 GET /api/imagecode?pcodeid=ad53fc8c-660f-4935-8120-e6b23182f582&codeid=826bab8f-bec6-4f2d-92da-ed760f09a525 (127.0.0.1) 22.18ms
+[I 161122 16:52:01 web:1946] 200 GET /api/imagecode?pcodeid=826bab8f-bec6-4f2d-92da-ed760f09a525&codeid=5a94e998-3f89-4960-8729-da7fb598f13e (127.0.0.1) 15.22ms
+[I 161122 16:52:02 web:1946] 200 GET /api/imagecode?pcodeid=5a94e998-3f89-4960-8729-da7fb598f13e&codeid=f78a6c48-70fc-4b6a-b564-7e8043903e24 (127.0.0.1) 19.61ms
+[I 161122 16:52:38 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:52:39 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:54:08 web:1946] 200 GET /api/imagecode?pcodeid=f78a6c48-70fc-4b6a-b564-7e8043903e24&codeid=aa67c8da-b879-4d43-8223-5b104fad2f0b (127.0.0.1) 72.05ms
+[I 161122 17:24:33 web:1946] 304 GET /login.html (127.0.0.1) 12.97ms
+[I 161122 17:24:33 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 2.62ms
+[I 161122 17:24:33 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 3.61ms
+[I 161122 17:25:22 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.81ms
+[I 161122 17:25:25 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=f4039f04-bae5-47e7-9b3b-d9d87c5ec12e (127.0.0.1) 35.60ms
+[I 161122 17:27:59 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 08:45:51 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=bca5f5c0-55f8-424f-b2fe-9c0022ae097a (127.0.0.1) 79.12ms
+[I 161123 08:45:53 web:1946] 200 GET /favicon.ico (127.0.0.1) 15.00ms
+[I 161123 08:46:03 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.55ms
+[I 161123 09:01:52 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:02:24 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:02:40 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:08:11 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:10:29 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:12:25 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:16:44 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:22:59 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:24:36 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 09:29:56 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:30:02 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:30:25 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 09:30:28 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 09:31:51 web:1946] 200 GET /api/imagecode?pcodeid=bca5f5c0-55f8-424f-b2fe-9c0022ae097a&codeid=4a63c28b-f956-4eed-af4e-5ad92a5c916f (127.0.0.1) 92.61ms
+[I 161123 09:32:56 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[E 161123 09:34:21 web:1524] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Content-Length': '111', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'page_count="2|1:0|10:1479431823|10:page_count|4:Mw==|a706fdc20d467b66bb5fcc2d271283a3a665bc689d1d17f583192792248f6a7d"', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'ce0ddd4d-67c7-6966-1a07-5ab8cd1b66cf'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/0829/Tornado_Project/handlers/BaseHandler.py", line 19, in prepare
+        self.json_args = json.loads(self.request.body)
+    NameError: global name 'json' is not defined
+[E 161123 09:34:21 web:1946] 500 POST /api/smscode (127.0.0.1) 5.11ms
+[I 161123 09:34:36 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:34:40 web:1946] 200 POST /api/smscode (127.0.0.1) 2.37ms
+[I 161123 09:34:49 web:1946] 200 GET /api/imagecode?pcodeid=4a63c28b-f956-4eed-af4e-5ad92a5c916f&codeid=9c5db723-8fe0-46f3-985b-2b0ca3546b56 (127.0.0.1) 22.28ms
+[I 161123 09:34:56 web:1946] 200 POST /api/smscode (127.0.0.1) 1.88ms
+[I 161123 09:35:16 web:1946] 200 POST /api/smscode (127.0.0.1) 1.05ms
+[I 161123 09:35:37 web:1946] 200 GET /api/imagecode?pcodeid=9c5db723-8fe0-46f3-985b-2b0ca3546b56&codeid=248bf1cf-bd72-4d1c-8c71-974e949da803 (127.0.0.1) 17.26ms
+[I 161123 09:36:06 web:1946] 200 POST /api/smscode (127.0.0.1) 1835.65ms
+[I 161123 09:47:40 web:1946] 304 GET /register.html (127.0.0.1) 14.73ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 12.88ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.03ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.45ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.20ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.66ms
+[I 161123 09:47:40 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 10.98ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 11.60ms
+[I 161123 09:47:40 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.57ms
+[I 161123 09:47:41 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 18.48ms
+[I 161123 09:47:43 web:1946] 304 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.87ms
+[I 161123 09:47:43 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=8168f1a3-3da9-44c3-bc6c-56baa3795e99 (127.0.0.1) 22.21ms
+[I 161123 09:48:09 web:1946] 200 POST /api/smscode (127.0.0.1) 1.16ms
+[I 161123 09:48:52 web:1946] 304 GET /register.html (127.0.0.1) 1.03ms
+[I 161123 09:48:52 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.05ms
+[I 161123 09:48:53 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.23ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.06ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.06ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.58ms
+[I 161123 09:48:53 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.75ms
+[I 161123 09:48:53 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.53ms
+[I 161123 09:48:53 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.59ms
+[I 161123 09:48:53 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.03ms
+[I 161123 09:48:56 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=8bb6bfe7-a48c-423a-a9ae-27bc6b76958f (127.0.0.1) 22.67ms
+[I 161123 09:49:18 web:1946] 200 POST /api/smscode (127.0.0.1) 444.19ms
+[I 161123 09:50:44 autoreload:204] /usr/lib/python2.7/distutils/debug.py modified; restarting server
+[I 161123 10:08:23 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:09:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:12:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:13:27 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 11:07:14 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 11:08:35 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 11:08:38 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161123 11:20:06 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:20:34 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:22:58 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161123 11:25:18 web:1946] 200 GET /api/imagecode?pcodeid=8bb6bfe7-a48c-423a-a9ae-27bc6b76958f&codeid=83f51da3-da1b-4b1c-902e-31a13a7e5d09 (127.0.0.1) 65.91ms
+[W 161123 11:25:26 web:1521] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[W 161123 11:25:26 web:1946] 403 POST /api/smscode (127.0.0.1) 11.12ms
+[I 161123 11:27:25 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 11:29:07 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:29:30 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 11:29:40 web:1946] 304 GET /register.html (127.0.0.1) 15.18ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.76ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.79ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.12ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.74ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 4.34ms
+[I 161123 11:29:40 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.65ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.88ms
+[I 161123 11:29:40 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.46ms
+[I 161123 11:29:41 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.75ms
+[I 161123 11:29:43 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=b59861b5-c366-4aa8-b031-0581253c79dc (127.0.0.1) 41.36ms
+[I 161123 11:30:02 web:1946] 200 POST /api/smscode (127.0.0.1) 464.41ms
+[I 161123 11:30:55 web:1946] 304 GET / (127.0.0.1) 7.72ms
+[I 161123 11:30:55 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 4.73ms
+[W 161123 11:30:59 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.05ms
+[I 161123 11:36:32 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 5.90ms
+[W 161123 11:36:40 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.76ms
+[I 161123 11:36:41 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.47ms
+[I 161123 11:36:44 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=0046530c-cfbe-4a24-8571-5705601136a7 (127.0.0.1) 22.64ms
+[I 161123 11:38:03 autoreload:204] /home/python/0829/Tornado_Project/libs/yuntongxun/CCP.py modified; restarting server
+[I 161123 11:38:04 autoreload:204] /home/python/0829/Tornado_Project/libs/yuntongxun/CCP.py modified; restarting server
+[E 161123 16:16:45 torndb:103] Cannot connect to MySQL on 127.0.0.1
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[I 161123 16:16:55 web:1971] 304 GET / (127.0.0.1) 7.64ms
+[I 161123 16:16:55 web:1971] 304 GET /static/js/ihome/index.js (127.0.0.1) 0.91ms
+[I 161123 16:16:58 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 7.96ms
+[I 161123 16:16:58 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=a7248845-ae4f-4e07-a3c7-5fcafa2fcc8f (127.0.0.1) 65.75ms
+[I 161123 16:17:00 web:1971] 200 GET /api/imagecode?pcodeid=a7248845-ae4f-4e07-a3c7-5fcafa2fcc8f&codeid=97deccec-db2c-4358-9fa5-297ad54c9eb8 (127.0.0.1) 12.55ms
+[I 161123 16:33:24 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/libs/yuntongxun/CCP.py modified; restarting server
+[E 161123 16:33:25 torndb:103] Cannot connect to MySQL on 127.0.0.1
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[E 161123 16:43:08 torndb:103] Cannot connect to MySQL on 127.0.0.1
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[I 161123 16:43:11 web:1971] 200 GET /login.html (127.0.0.1) 16.29ms
+[I 161123 16:43:11 web:1971] 200 GET /static/css/ihome/login.css (127.0.0.1) 3.12ms
+[I 161123 16:43:11 web:1971] 200 GET /static/js/ihome/login.js (127.0.0.1) 2.45ms
+[I 161123 16:45:25 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[E 161123 16:45:25 torndb:103] Cannot connect to MySQL on 127.0.0.1
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[I 161123 16:47:20 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[E 161123 16:47:20 torndb:103] Cannot connect to MySQL on 127.0.0.1
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[I 161123 16:47:31 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[E 161123 16:47:31 torndb:103] Cannot connect to MySQL on 127.0.0.1
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 100, in __init__
+        self.reconnect()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/torndb.py", line 117, in reconnect
+        self._db = MySQLdb.connect(**self._db_args)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+        return Connection(*args, **kwargs)
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+        super(Connection, self).__init__(*args, **kwargs2)
+    OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[I 161123 16:47:40 web:1971] 200 GET /login.html (127.0.0.1) 19.27ms
+[I 161123 16:47:40 web:1971] 200 GET /favicon.ico (127.0.0.1) 40.92ms
+[I 161123 16:49:18 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/config.py modified; restarting server
+[I 161123 16:49:50 web:1971] 304 GET /login.html (127.0.0.1) 6.04ms
+[I 161123 16:49:50 web:1971] 200 GET /favicon.ico (127.0.0.1) 1.62ms
+[I 161123 16:51:38 web:1971] 200 GET /login.html (127.0.0.1) 3.21ms
+[I 161123 16:51:39 web:1971] 200 GET /favicon.ico (127.0.0.1) 1.10ms
+[I 161123 16:52:27 web:1971] 200 GET /login.html (127.0.0.1) 1.01ms
+[I 161123 16:52:27 web:1971] 200 GET /favicon.ico (127.0.0.1) 1.12ms
+[I 161123 16:53:27 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161123 16:55:42 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161123 16:55:55 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161123 16:57:39 web:1971] 304 GET /login.html (127.0.0.1) 9.63ms
+[I 161123 16:57:39 web:1971] 200 GET /favicon.ico (127.0.0.1) 2.36ms
+[I 161123 16:57:59 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161123 17:09:31 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161123 17:15:38 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161123 20:30:59 web:1971] 200 GET /login.html (127.0.0.1) 20.44ms
+[I 161123 20:30:59 web:1971] 200 GET /favicon.ico (127.0.0.1) 1.90ms
+[I 161123 20:31:01 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.85ms
+[E 161123 20:31:02 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:02 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=32b31caa-4e75-49b2-8aa4-9023241c79c9 (127.0.0.1) 162.73ms
+[E 161123 20:31:06 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161123 20:31:06 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:06 web:1971] 200 GET /api/imagecode?pcodeid=32b31caa-4e75-49b2-8aa4-9023241c79c9&codeid=4cbccf20-60c6-44d1-9d1f-63fc85a8e175 (127.0.0.1) 14.23ms
+[E 161123 20:31:07 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161123 20:31:07 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:07 web:1971] 200 GET /api/imagecode?pcodeid=4cbccf20-60c6-44d1-9d1f-63fc85a8e175&codeid=d5aebdb0-e9e2-400c-8997-1c6bbb77bac4 (127.0.0.1) 13.16ms
+[E 161123 20:31:08 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161123 20:31:08 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:08 web:1971] 200 GET /api/imagecode?pcodeid=d5aebdb0-e9e2-400c-8997-1c6bbb77bac4&codeid=9c501f5b-24a8-4628-9e57-1f50810a21f5 (127.0.0.1) 18.14ms
+[E 161123 20:31:10 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161123 20:31:10 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:10 web:1971] 200 GET /api/imagecode?pcodeid=9c501f5b-24a8-4628-9e57-1f50810a21f5&codeid=4fb43357-a9d5-4cd8-ac02-451dd13c863d (127.0.0.1) 17.34ms
+[E 161123 20:31:38 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161123 20:31:38 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:38 web:1971] 200 GET /api/imagecode?pcodeid=4fb43357-a9d5-4cd8-ac02-451dd13c863d&codeid=e128191f-6302-4562-8db3-8d5776fcb04b (127.0.0.1) 18.80ms
+[E 161123 20:31:41 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161123 20:31:41 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161123 20:31:41 web:1971] 304 GET /api/imagecode?pcodeid=4fb43357-a9d5-4cd8-ac02-451dd13c863d&codeid=e128191f-6302-4562-8db3-8d5776fcb04b (127.0.0.1) 26.47ms
+[I 161124 12:11:33 autoreload:204] /usr/lib/python2.7/distutils/debug.py modified; restarting server
+[I 161124 12:11:36 autoreload:204] /usr/lib/python2.7/base64.py modified; restarting server
+[I 161125 19:46:06 web:1971] 200 GET /register.html (127.0.0.1) 12.74ms
+[I 161125 19:46:06 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.16ms
+[I 161125 19:46:06 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.12ms
+[I 161125 19:46:06 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.85ms
+[I 161125 19:46:06 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 10.70ms
+[I 161125 19:46:06 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 24.63ms
+[I 161125 19:46:06 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 2.19ms
+[I 161125 19:46:06 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.16ms
+[I 161125 19:46:06 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 6.66ms
+[I 161125 19:46:06 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.34ms
+[E 161125 19:46:06 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 19:46:06 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=5115310e-dd51-46a7-8742-74010f4db45e (127.0.0.1) 129.66ms
+[I 161125 19:46:06 web:1971] 200 GET /favicon.ico (127.0.0.1) 3.57ms
+[E 161125 19:46:08 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 19:46:08 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 19:46:08 web:1971] 200 GET /api/imagecode?pcodeid=5115310e-dd51-46a7-8742-74010f4db45e&codeid=cce45366-7d9b-4069-9670-434510b4f4de (127.0.0.1) 9.19ms
+[E 161125 19:46:09 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 19:46:09 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 19:46:09 web:1971] 200 GET /api/imagecode?pcodeid=cce45366-7d9b-4069-9670-434510b4f4de&codeid=55565fde-b193-4064-a6b8-fad1dd9f9e8a (127.0.0.1) 12.45ms
+[I 161125 19:46:35 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 34.76ms
+[I 161125 19:46:44 web:1971] 304 GET /register.html (127.0.0.1) 1.13ms
+[I 161125 19:46:45 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.79ms
+[I 161125 19:46:45 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.94ms
+[I 161125 19:46:45 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.10ms
+[I 161125 19:46:45 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.99ms
+[I 161125 19:46:45 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.49ms
+[I 161125 19:46:45 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 18.06ms
+[I 161125 19:46:45 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.97ms
+[I 161125 19:46:45 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 0.79ms
+[I 161125 19:46:45 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.86ms
+[E 161125 19:46:45 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 19:46:45 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=d5fe1fbf-b4f5-44c2-880b-7e0f94acca46 (127.0.0.1) 72.89ms
+[E 161125 19:46:49 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 19:46:49 web:1971] 304 GET /api/imagecode?pcodeid=&codeid=d5fe1fbf-b4f5-44c2-880b-7e0f94acca46 (127.0.0.1) 12.21ms
+[I 161125 19:47:39 web:1971] 304 GET /register.html (127.0.0.1) 2.06ms
+[I 161125 19:47:40 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.09ms
+[I 161125 19:47:40 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 0.74ms
+[I 161125 19:47:40 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.10ms
+[I 161125 19:47:40 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.81ms
+[I 161125 19:47:40 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 5.74ms
+[I 161125 19:47:40 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.57ms
+[I 161125 19:47:40 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.44ms
+[I 161125 19:47:40 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.02ms
+[I 161125 19:47:40 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.20ms
+[I 161125 19:47:40 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=ed869cb0-933b-4347-9378-a83979b50f65 (127.0.0.1) 17.70ms
+[I 161125 19:48:00 web:1971] 200 GET /api/imagecode?pcodeid=ed869cb0-933b-4347-9378-a83979b50f65&codeid=8aebee0c-d869-47d8-b63f-f77879bf048c (127.0.0.1) 44.63ms
+[I 161125 19:48:11 web:1971] 200 POST /api/smscode (127.0.0.1) 491.49ms
+[I 161125 19:51:52 web:1971] 200 GET /api/imagecode?pcodeid=8aebee0c-d869-47d8-b63f-f77879bf048c&codeid=e4bd50ee-ec68-4e69-b43b-b6b752c8abe8 (127.0.0.1) 13.11ms
+[I 161125 19:52:07 web:1971] 200 POST /api/smscode (127.0.0.1) 418.32ms
+[I 161125 19:54:50 web:1971] 200 GET /register.html (127.0.0.1) 1.46ms
+[I 161125 19:54:50 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.45ms
+[I 161125 19:54:50 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.16ms
+[I 161125 19:54:50 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.35ms
+[I 161125 19:54:50 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.86ms
+[I 161125 19:54:50 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 0.74ms
+[I 161125 19:54:50 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.92ms
+[I 161125 19:54:50 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.71ms
+[I 161125 19:54:50 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.58ms
+[I 161125 19:54:50 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.01ms
+[I 161125 19:54:50 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=b0d248a4-cc43-42a6-bd5b-3672a70d8b0b (127.0.0.1) 13.19ms
+[I 161125 19:55:56 web:1971] 200 GET /register.html (127.0.0.1) 1.06ms
+[I 161125 19:55:56 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.87ms
+[I 161125 19:55:56 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.11ms
+[I 161125 19:55:56 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 5.04ms
+[I 161125 19:55:56 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.13ms
+[I 161125 19:55:56 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.09ms
+[I 161125 19:55:56 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 18.40ms
+[I 161125 19:55:56 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.96ms
+[I 161125 19:55:56 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 0.64ms
+[I 161125 19:55:56 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.28ms
+[I 161125 19:55:57 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=7b8bad0d-5fef-41c4-97ef-3ac02dec2a4a (127.0.0.1) 36.49ms
+[I 161125 19:56:27 web:1971] 200 GET /register.html (127.0.0.1) 1.24ms
+[I 161125 19:56:27 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 21.01ms
+[I 161125 19:56:27 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.29ms
+[I 161125 19:56:27 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.88ms
+[I 161125 19:56:27 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.50ms
+[I 161125 19:56:27 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.89ms
+[I 161125 19:56:27 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.38ms
+[I 161125 19:56:27 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.92ms
+[I 161125 19:56:27 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.27ms
+[I 161125 19:56:27 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 10.56ms
+[I 161125 19:56:28 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=6c4ac220-d659-4a8e-b7ea-3e9d00e9a441 (127.0.0.1) 38.38ms
+[I 161125 19:56:42 web:1971] 200 GET /register.html (127.0.0.1) 1.28ms
+[I 161125 19:56:42 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 6.83ms
+[I 161125 19:56:42 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 7.68ms
+[I 161125 19:56:42 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.88ms
+[I 161125 19:56:42 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.77ms
+[I 161125 19:56:42 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 6.02ms
+[I 161125 19:56:42 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.49ms
+[I 161125 19:56:42 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 17.11ms
+[I 161125 19:56:42 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.52ms
+[I 161125 19:56:42 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 8.41ms
+[I 161125 19:56:42 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=dcde69a0-809c-4d2d-b1b2-adcdf48be342 (127.0.0.1) 22.69ms
+[I 161125 19:58:53 web:1971] 304 GET /register.html (127.0.0.1) 1.40ms
+[I 161125 19:58:54 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.86ms
+[I 161125 19:58:54 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 25.34ms
+[I 161125 19:58:54 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.24ms
+[I 161125 19:58:54 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.17ms
+[I 161125 19:58:54 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.83ms
+[I 161125 19:58:54 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.58ms
+[I 161125 19:58:54 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.24ms
+[I 161125 19:58:54 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 0.91ms
+[I 161125 19:58:54 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.90ms
+[I 161125 19:58:54 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=a1adda21-2902-4822-82df-f274824c8a53 (127.0.0.1) 18.83ms
+[E 161125 19:59:33 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 19:59:34 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 19:59:34 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 19:59:34 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 19:59:34 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 19:59:34 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 19:59:34 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[I 161125 20:01:42 web:1971] 200 POST /api/smscode (127.0.0.1) 3.25ms
+[I 161125 20:01:42 web:1971] 200 GET /api/imagecode?pcodeid=a1adda21-2902-4822-82df-f274824c8a53&codeid=f7758287-fbcc-42d6-a5c0-cfa55e0a2c50 (127.0.0.1) 11.91ms
+[I 161125 20:01:58 web:1971] 200 POST /api/smscode (127.0.0.1) 387.84ms
+[I 161125 20:07:39 web:1971] 304 GET /register.html (127.0.0.1) 0.97ms
+[I 161125 20:07:39 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.42ms
+[I 161125 20:07:39 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 8.80ms
+[I 161125 20:07:39 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.86ms
+[I 161125 20:07:39 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.92ms
+[I 161125 20:07:39 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 0.95ms
+[I 161125 20:07:39 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.26ms
+[I 161125 20:07:39 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 3.55ms
+[I 161125 20:07:39 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 0.79ms
+[I 161125 20:07:39 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 11.78ms
+[I 161125 20:07:39 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=a5b4332f-e3cb-44ee-bf3f-fb0a1cb58888 (127.0.0.1) 48.91ms
+[I 161125 20:07:50 web:1971] 200 GET /api/imagecode?pcodeid=a5b4332f-e3cb-44ee-bf3f-fb0a1cb58888&codeid=c05a7b71-f580-439c-a571-e69f11c8466a (127.0.0.1) 35.96ms
+[I 161125 20:08:20 web:1971] 200 POST /api/smscode (127.0.0.1) 486.75ms
+[E 161125 20:10:01 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 20:10:01 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 20:10:01 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 20:10:01 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 20:10:01 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 20:10:01 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[I 161125 20:10:25 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161125 20:17:59 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/config.py modified; restarting server
+[I 161125 20:22:01 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:27:24 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:27:40 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:28:02 web:1971] 200 GET /api/imagecode?pcodeid=c05a7b71-f580-439c-a571-e69f11c8466a&codeid=7481c8ff-82f9-4683-a50e-2a6e82769ebb (127.0.0.1) 235.16ms
+[I 161125 20:28:14 web:1971] 200 POST /api/smscode (127.0.0.1) 771.29ms
+[E 161125 20:28:29 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[E 161125 20:28:29 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[I 161125 20:29:56 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:30:04 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[E 161125 20:30:08 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2047, in finish
+        self.execute()
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes exactly 1 argument (3 given)
+[I 161125 20:33:36 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:33:44 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[E 161125 20:33:54 web:1548] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '123', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|636d1f76|e781f42ccc7d22eaee05ff71d15f3f0b|1480074366', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=Oq7B3thEfKu4g2arXUhlnz5LaqxYMB9PzkptoLOkWYmm4IBDNCuUMLLeA6qUNLmI; _xsrf=2|636d1f76|e781f42ccc7d22eaee05ff71d15f3f0b|1480074366', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py", line 33, in post
+        if not all(mobile, password, sms_code):
+    TypeError: all() takes exactly one argument (3 given)
+[E 161125 20:33:54 web:1971] 500 POST /api/register (127.0.0.1) 3.45ms
+[I 161125 20:34:00 web:1971] 304 GET /register.html (127.0.0.1) 6.69ms
+[I 161125 20:34:01 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 2.63ms
+[I 161125 20:34:01 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.75ms
+[I 161125 20:34:01 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 0.84ms
+[I 161125 20:34:01 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.34ms
+[I 161125 20:34:01 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 20.50ms
+[I 161125 20:34:01 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 17.01ms
+[I 161125 20:34:01 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 24.73ms
+[I 161125 20:34:01 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.25ms
+[I 161125 20:34:01 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.55ms
+[I 161125 20:34:01 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=9d62aff3-8d17-4ad7-ae1d-34bc9f5a556d (127.0.0.1) 100.84ms
+[I 161125 20:34:14 web:1971] 200 POST /api/smscode (127.0.0.1) 414.74ms
+[I 161125 20:35:50 web:1971] 200 POST /api/smscode (127.0.0.1) 453.02ms
+[E 161125 20:38:01 web:1548] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '123', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|636d1f76|e781f42ccc7d22eaee05ff71d15f3f0b|1480074366', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/register.html', 'Cookie': 'csrftoken=Oq7B3thEfKu4g2arXUhlnz5LaqxYMB9PzkptoLOkWYmm4IBDNCuUMLLeA6qUNLmI; _xsrf=2|636d1f76|e781f42ccc7d22eaee05ff71d15f3f0b|1480074366', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/linqzhou/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py", line 33, in post
+        if not all(mobile, password, sms_code):
+    TypeError: all() takes exactly one argument (3 given)
+[E 161125 20:38:01 web:1971] 500 POST /api/register (127.0.0.1) 1.68ms
+[I 161125 20:38:50 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:38:53 web:1971] 200 POST /api/register (127.0.0.1) 1.30ms
+[I 161125 20:39:08 web:1971] 200 GET /api/imagecode?pcodeid=9d62aff3-8d17-4ad7-ae1d-34bc9f5a556d&codeid=f983235b-35ba-41b0-a2e2-3b2e7095c38f (127.0.0.1) 22.11ms
+[I 161125 20:39:18 web:1971] 200 POST /api/smscode (127.0.0.1) 412.98ms
+[I 161125 20:39:35 web:1971] 200 POST /api/register (127.0.0.1) 0.77ms
+[I 161125 20:41:25 web:1971] 200 POST /api/register (127.0.0.1) 0.85ms
+[I 161125 20:41:43 web:1971] 200 GET /register.html (127.0.0.1) 6.61ms
+[I 161125 20:41:43 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.23ms
+[I 161125 20:41:43 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.88ms
+[I 161125 20:41:43 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.57ms
+[I 161125 20:41:43 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 0.89ms
+[I 161125 20:41:43 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.25ms
+[I 161125 20:41:43 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.14ms
+[I 161125 20:41:43 web:1971] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 93.38ms
+[I 161125 20:41:43 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.59ms
+[I 161125 20:41:43 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 4.04ms
+[I 161125 20:41:43 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.93ms
+[I 161125 20:41:44 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=6c0d8c94-dea7-46b6-836b-b70b1c64642e (127.0.0.1) 30.84ms
+[I 161125 20:41:53 web:1971] 200 POST /api/smscode (127.0.0.1) 408.31ms
+[I 161125 20:42:12 web:1971] 200 POST /api/register (127.0.0.1) 0.91ms
+[I 161125 20:46:21 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161125 20:46:38 web:1971] 200 GET /api/imagecode?pcodeid=6c0d8c94-dea7-46b6-836b-b70b1c64642e&codeid=7bfe14ff-a145-404f-a79b-6989bb6c249b (127.0.0.1) 24.25ms
+[I 161125 20:46:46 web:1971] 200 POST /api/smscode (127.0.0.1) 370.30ms
+[I 161125 20:46:58 web:1971] 200 POST /api/register (127.0.0.1) 30.42ms
+[I 161125 20:47:23 web:1971] 304 GET /register.html (127.0.0.1) 19.89ms
+[I 161125 20:47:23 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.39ms
+[I 161125 20:47:23 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.40ms
+[I 161125 20:47:23 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.33ms
+[I 161125 20:47:23 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.93ms
+[I 161125 20:47:23 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.29ms
+[I 161125 20:47:23 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.08ms
+[I 161125 20:47:23 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.07ms
+[I 161125 20:47:23 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.76ms
+[I 161125 20:47:23 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.95ms
+[I 161125 20:47:23 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 0.94ms
+[I 161125 20:47:23 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=91cddafd-a591-4514-b15e-dbbad6334c28 (127.0.0.1) 14.23ms
+[I 161125 20:47:35 web:1971] 304 GET /register.html (127.0.0.1) 0.82ms
+[I 161125 20:47:35 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.09ms
+[I 161125 20:47:35 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.31ms
+[I 161125 20:47:35 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.09ms
+[I 161125 20:47:35 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.59ms
+[I 161125 20:47:35 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.68ms
+[I 161125 20:47:35 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.76ms
+[I 161125 20:47:35 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 0.96ms
+[I 161125 20:47:35 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.02ms
+[I 161125 20:47:35 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.88ms
+[I 161125 20:47:35 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.92ms
+[I 161125 20:47:36 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=9c61e1f0-074b-472d-b38e-96bdf4470429 (127.0.0.1) 12.40ms
+[E 161125 20:48:03 Passport:53] (1062, "Duplicate entry '13173530880' for key 'up_name'")
+[I 161125 20:48:03 web:1971] 200 POST /api/register (127.0.0.1) 4.60ms
+[I 161125 20:51:14 web:1971] 200 GET /api/imagecode?pcodeid=9c61e1f0-074b-472d-b38e-96bdf4470429&codeid=1ff0808a-212c-4a8f-aaa0-0701c1ac9f4a (127.0.0.1) 12.45ms
+[I 161125 20:51:20 web:1971] 200 POST /api/smscode (127.0.0.1) 414.87ms
+[E 161125 20:51:31 session:41] global name 'session_id' is not defined
+[E 161125 20:51:31 Passport:63] local variable 'data' referenced before assignment
+[I 161125 20:51:31 web:1971] 200 POST /api/register (127.0.0.1) 4.39ms
+[I 161125 20:51:59 web:1971] 304 GET /register.html (127.0.0.1) 1.22ms
+[I 161125 20:51:59 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.99ms
+[I 161125 20:51:59 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 6.53ms
+[I 161125 20:51:59 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.92ms
+[I 161125 20:51:59 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.50ms
+[I 161125 20:51:59 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.43ms
+[I 161125 20:51:59 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.32ms
+[I 161125 20:51:59 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 4.56ms
+[I 161125 20:51:59 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 5.40ms
+[I 161125 20:51:59 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.72ms
+[I 161125 20:51:59 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 17.91ms
+[I 161125 20:51:59 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=b3a79bfd-f684-4b2a-98b6-f40e25fc4c7c (127.0.0.1) 21.18ms
+[E 161125 20:53:04 session:41] global name 'session_id' is not defined
+[E 161125 20:53:04 Passport:63] local variable 'data' referenced before assignment
+[I 161125 20:53:04 web:1971] 200 POST /api/register (127.0.0.1) 61.31ms
+[I 161125 20:54:19 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161125 20:56:22 web:1971] 304 GET /register.html (127.0.0.1) 18.55ms
+[I 161125 20:56:22 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.37ms
+[I 161125 20:56:22 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.04ms
+[I 161125 20:56:22 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.84ms
+[I 161125 20:56:22 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.88ms
+[I 161125 20:56:22 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 0.85ms
+[I 161125 20:56:22 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.08ms
+[I 161125 20:56:22 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.82ms
+[I 161125 20:56:22 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.98ms
+[I 161125 20:56:22 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.23ms
+[I 161125 20:56:22 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.07ms
+[I 161125 20:56:22 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=46807210-94c8-4de2-b1e6-dacbf33d81cc (127.0.0.1) 56.94ms
+[I 161125 20:56:34 web:1971] 200 POST /api/smscode (127.0.0.1) 1.40ms
+[I 161125 20:56:34 web:1971] 200 GET /api/imagecode?pcodeid=46807210-94c8-4de2-b1e6-dacbf33d81cc&codeid=06779b5b-b703-4422-9a80-f60f809155a6 (127.0.0.1) 33.42ms
+[I 161125 20:56:43 web:1971] 200 POST /api/smscode (127.0.0.1) 418.69ms
+[E 161125 20:57:03 session:41] global name 'session_id' is not defined
+[E 161125 20:57:03 Passport:63] local variable 'data' referenced before assignment
+[I 161125 20:57:03 web:1971] 200 POST /api/register (127.0.0.1) 7.35ms
+[I 161125 20:57:35 web:1971] 304 GET /login.html (127.0.0.1) 1.12ms
+[I 161125 20:57:35 web:1971] 304 GET /static/css/ihome/login.css (127.0.0.1) 2.07ms
+[I 161125 20:57:35 web:1971] 200 GET /static/js/ihome/login.js (127.0.0.1) 0.95ms
+[I 161126 09:08:39 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/utils/session.py modified; restarting server
+[I 161126 09:08:59 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=961055ae-e761-4e38-963e-bb66bb89f0b0 (127.0.0.1) 41.47ms
+[I 161126 09:09:11 web:1971] 200 POST /api/smscode (127.0.0.1) 1.87ms
+[I 161126 09:09:11 web:1971] 200 GET /api/imagecode?pcodeid=961055ae-e761-4e38-963e-bb66bb89f0b0&codeid=29550095-651f-48ba-aacd-8f39c8df820c (127.0.0.1) 15.51ms
+[I 161126 09:11:26 web:1971] 200 POST /api/smscode (127.0.0.1) 127413.18ms
+[I 161126 09:11:26 web:1971] 200 POST /api/register (127.0.0.1) 11.63ms
+[E 161126 09:11:26 Passport:53] (1062, "Duplicate entry '13173530880' for key 'up_name'")
+[I 161126 09:11:26 web:1971] 200 POST /api/register (127.0.0.1) 13.21ms
+[I 161126 09:12:48 web:1971] 200 POST /api/register (127.0.0.1) 216.05ms
+[E 161126 09:13:25 Passport:53] (1062, "Duplicate entry '13173530880' for key 'up_name'")
+[I 161126 09:13:25 web:1971] 200 POST /api/register (127.0.0.1) 4.53ms
+[I 161126 09:13:36 web:1971] 200 POST /api/register (127.0.0.1) 7.49ms
+[I 161126 09:15:15 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161126 09:15:40 web:1971] 200 POST /api/register (127.0.0.1) 2.90ms
+[I 161126 09:15:44 web:1971] 200 GET /api/imagecode?pcodeid=29550095-651f-48ba-aacd-8f39c8df820c&codeid=a3209d61-1867-4f5a-b454-f528251d7b31 (127.0.0.1) 47.88ms
+[I 161126 09:17:59 web:1971] 200 POST /api/smscode (127.0.0.1) 127792.45ms
+[I 161126 09:17:59 web:1971] 200 POST /api/register (127.0.0.1) 189.73ms
+[I 161126 09:20:03 web:1971] 200 POST /api/register (127.0.0.1) 12.46ms
+[I 161126 09:24:35 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161126 09:24:42 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/urls.py modified; restarting server
+[I 161126 09:28:22 web:1971] 200 GET /api/imagecode?pcodeid=a3209d61-1867-4f5a-b454-f528251d7b31&codeid=edcd5312-e330-45c7-9802-b253339318a2 (127.0.0.1) 65.61ms
+[I 161126 09:28:32 web:1971] 200 POST /api/smscode (127.0.0.1) 413.95ms
+[I 161126 09:28:53 web:1971] 200 POST /api/register (127.0.0.1) 5.03ms
+[I 161126 09:28:59 web:1971] 304 GET /register.html (127.0.0.1) 12.89ms
+[I 161126 09:29:00 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 29.43ms
+[I 161126 09:29:00 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 3.06ms
+[I 161126 09:29:00 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.89ms
+[I 161126 09:29:00 web:1971] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.14ms
+[I 161126 09:29:00 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.62ms
+[I 161126 09:29:00 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.30ms
+[I 161126 09:29:00 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.43ms
+[I 161126 09:29:00 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.68ms
+[I 161126 09:29:00 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.25ms
+[I 161126 09:29:00 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.76ms
+[I 161126 09:29:00 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=d84a7105-ca55-4dd7-95bf-2601075352e7 (127.0.0.1) 20.29ms
+[I 161126 09:29:17 web:1971] 200 POST /api/smscode (127.0.0.1) 1.90ms
+[I 161126 09:29:17 web:1971] 200 GET /api/imagecode?pcodeid=d84a7105-ca55-4dd7-95bf-2601075352e7&codeid=c898b9d9-3468-4932-9e22-87f8d5839cee (127.0.0.1) 25.64ms
+[I 161126 09:30:06 web:1971] 200 POST /api/register (127.0.0.1) 3.44ms
+[I 161126 09:30:06 web:1971] 304 GET / (127.0.0.1) 1.94ms
+[I 161126 09:30:06 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.99ms
+[I 161126 09:30:06 web:1971] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.57ms
+[I 161126 09:30:06 web:1971] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 2.01ms
+[I 161126 09:30:06 web:1971] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 82.93ms
+[I 161126 09:30:06 web:1971] 304 GET /static/images/home01.jpg (127.0.0.1) 13.04ms
+[I 161126 09:30:06 web:1971] 304 GET /static/js/template.js (127.0.0.1) 12.53ms
+[I 161126 09:30:06 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 17.28ms
+[I 161126 09:30:06 web:1971] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.96ms
+[I 161126 09:30:06 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.49ms
+[I 161126 09:30:07 web:1971] 304 GET /static/images/home03.jpg (127.0.0.1) 34.96ms
+[I 161126 09:30:07 web:1971] 304 GET /static/images/home02.jpg (127.0.0.1) 47.64ms
+[W 161126 09:30:07 web:1971] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.66ms
+[I 161126 09:30:11 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=1e8afb52-5738-4512-83dd-518b62b85d4c (127.0.0.1) 40.23ms
+[W 161126 09:30:23 web:1971] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.12ms
+[I 161126 09:30:29 web:1971] 304 GET /login.html (127.0.0.1) 1.39ms
+[I 161126 09:30:29 web:1971] 304 GET /static/js/ihome/login.js (127.0.0.1) 3.73ms
+[I 161126 09:31:05 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[W 161126 09:33:50 web:1971] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.19ms
+[I 161126 09:33:52 web:1971] 304 GET /static/js/ihome/register.js (127.0.0.1) 13.85ms
+[I 161126 09:33:52 web:1971] 200 GET /api/imagecode?pcodeid=&codeid=bb89c3d9-1e58-45c7-b63f-bdc55a1058e6 (127.0.0.1) 59.53ms
+[I 161126 09:34:06 web:1971] 200 POST /api/smscode (127.0.0.1) 388.94ms
+[I 161126 09:34:41 web:1971] 200 POST /api/register (127.0.0.1) 4.29ms
+[I 161126 09:43:12 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
+[I 161126 09:56:57 autoreload:204] /home/linqzhou/ftp/share/Project/Tornado_Project_demo/handlers/Passport.py modified; restarting server
