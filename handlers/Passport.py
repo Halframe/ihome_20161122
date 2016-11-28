@@ -8,6 +8,7 @@ import config
 from .BaseHandler import BaseHandler
 from utils.response_code import RET
 from utils.session import Session
+from utils.common import required_logined
 
 
 class IndexHandler(BaseHandler):
@@ -51,7 +52,7 @@ class RegisterHandler(BaseHandler):
                                   name=mobile, mobile=mobile, passwd=password)
         except Exception as e:
             logging.error(e)
-            return self.write({"errno":RET.DATAEXIST, "errmsg":"手机号已注册！"})
+            return self.write({"errno": RET.DATAEXIST, "errmsg": "手机号已注册！"})
         try:
             self.session = Session(self)
             self.session.data['user_id'] = res
@@ -64,10 +65,46 @@ class RegisterHandler(BaseHandler):
 
 
 class LoginHandler(BaseHandler):
-    """docstring for LoginHandler"""
+    """用户登入"""
 
     def post(self):
         mobile = self.json_args.get("mobile")
         password = self.json_args.get("password")
-        if not all((mobile, password))
-        print self.username
+        if not all((mobile, password)):
+            return self.write({"errno": RET.PARAMERR, "errmsg": "参数错误"})
+        res = self.db.get(
+            "select up_user_id, up_name, up_passwd from ih_user_profile where up_mobile=%(mobile)s", mobile=mobile)
+        password = hashlib.sha256(
+            config.passwd_hash_key + password).hexdigest()
+        if res and res["up_passwd"] == unicode(password):
+            try:
+                self.session = Session(self)
+                self.session.data["user_id"] = res["up_user_id"]
+                self.session.data["name"] = res["up_name"]
+                self.session.data["mobile"] = mobile
+                self.session.save()
+            except Exception as e:
+                logging.error(e)
+            return self.write({"errno": RET.OK, "errmsg": "OK"})
+        else:
+            return self.write({"errno": RET.DATAERR, "errmsg": "手机号或密码错误"})
+
+
+class CheckLoginHandler(BaseHandler):
+    """检测用户登录状态"""
+
+    def get(self):
+        if self.get_current_user():
+            self.write({"errno": RET.OK, "errmsg": "用户已登陆",
+                        "data": {"name": self.session.data.get("name")}})
+        else:
+            self.write({"errno": RET.SESSIONERR, "errmsg": "用户未登录"})
+
+class LogoutHandler(BaseHandler):
+    """登出"""
+    
+    @required_logined
+    def get(self):
+        self.session.delete()
+        self.write({"errno": RET.OK, "errmsg": "OK"})
+        
