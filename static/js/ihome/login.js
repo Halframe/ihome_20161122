@@ -27,19 +27,24 @@ $(document).ready(function() {
 
         var req_data = {
             mobile: mobile,
-            password: passwd,
+            password: password,
         };
         $.ajax({
-            url: "api/Login", 
+            url: "/api/login", 
             type: "post", 
             data: JSON.stringify(req_data),
             contentType: 'application/json',
             dataType: 'json',
+            headers: {
+                'X-XSRFTOKEN': getCookie("_xsrf"),
+            },
             success: function (data) {
-                
+                if ("0" != data.errno) {
+                    $("#mobile-err").show().children("span").html(data.errmsg);
+                } else {
+                    location.href = "/";
+                };
             }
-
-
         });
     });
 })
