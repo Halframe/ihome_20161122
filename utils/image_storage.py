@@ -3,15 +3,19 @@
 
 import logging
 
-from qiniu import Auth, put_file, etag, urlsafe_base64_encode
+from qiniu import Auth, put_data, etag, urlsafe_base64_encode
 import qiniu.config
 
 # 需要填写你的 Access Key 和 Secret Key
 access_key = 'iD5yHFaRnVIJ3p6_ptXpWOQ9YXQ4t3m4MZT7dR9l'
 secret_key = 'DkkSDGf36IHwvcQiaOgYJcYDhXPfkBne9u2HUBn2'
 
+# 要上传的空间
+bucket_name = 'ihome'
+
 
 def storage(data):
+
     if not data:
         return None
 
@@ -19,9 +23,6 @@ def storage(data):
 
         # 构建鉴权对象
         q = Auth(access_key, secret_key)
-
-        # 要上传的空间
-        bucket_name = 'ihome'
 
         # 上传到七牛后保存的文件名
         # key = 'my-python-logo.png';
@@ -32,10 +33,12 @@ def storage(data):
         # 要上传文件的本地路径
         # localfile = './sync/bbb.jpg'
 
-        ret, info = put_file(token, None, data)
+        ret, info = put_data(token, None, data)
+        # logging.info(info)
         # print(info)
         # assert ret['key'] == key
         # assert ret['hash'] == etag(localfile)
+
 
     except Exception as e:
         logging.error(e)
